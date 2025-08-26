@@ -4,8 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A5-Sami-Emergency-Hotline</title>
+<!-- links -->
+
+    
+<!-- font awasome cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--DaisyUI cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!--tailwind cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<style>
+  body {
+    background-color: #f5fff6;
+  }
+</style>
+
 </head>
+
+
+
+
+
+
+
 <body>
+
+
+
+
+
+
+<!-- Navbar -->
+<nav class="bg-white h-[100px] flex items-center justify-between px-4 md:px-[60px] border-b border-gray-200">
+  <!-- Left side-->
+  <div class="flex items-center gap-2 md:gap-4">
+    <img src="assets/logo.png" alt="Emergency Service Logo" class="h-8 w-8 md:h-12 md:w-12">
+    <div class="text-[#00A63E] font-bold text-sm md:text-xl">
+      <div>Emergency</div>
+      <div>Service</div>
+    </div>
+  </div>
+  
+  <!-- Right side -->
+  <div class="flex items-center gap-2 md:gap-4">
+    <!-- Heart counter -->
+    <div class="bg-[#edfff1] rounded-full px-2 py-1 md:px-4 md:py-2 flex items-center gap-1 md:gap-2">
+      <img src="assets/heart.png" alt="Heart" class="h-4 w-4 md:h-5 md:w-5">
+      <span id="heart-count" class="font-medium text-gray-700 text-xs md:text-base">0</span>
+    </div>
+    
+    <!-- Coin counter -->
+    <div class="bg-[#edfff1] rounded-full px-2 py-1 md:px-4 md:py-2 flex items-center gap-1 md:gap-2">
+      <img src="assets/coin.png" alt="Coin" class="h-4 w-4 md:h-5 md:w-5">
+      <span id="coin-count" class="font-medium text-gray-700 text-xs md:text-base">100</span>
+    </div>
+    
+  <!-- Copy button -->
+<button id="copy-button" class="bg-[#00A63E] text-white rounded-full px-3 py-1 md:px-6 md:py-2 font-medium hover:bg-[#008a35] transition-colors text-xs md:text-base">
+  <span class="hidden sm:inline"><span id="copy-count">0</span> Copy</span>
+  <span class="sm:hidden"><span id="copy-count-mobile">0</span></span>
+</button>
+  </div>
+</nav>
+
     
 </body>
 </html>
