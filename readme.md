@@ -1,4 +1,4 @@
-# DOM Manipulation Q&A
+# DOM Q&A
 
 ## What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
