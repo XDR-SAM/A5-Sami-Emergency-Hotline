@@ -1,4 +1,4 @@
-//default values
+//default values by programming hero
 let heartCount = 0;
 let coinCount = 100;
 let copyCount = 0;
@@ -47,9 +47,7 @@ function handleCallClick(button) {
         alert('You need at least 20 coins to make a call.');
         return;
     }
-  
 
-    
      coinCount -= 20;
     updateNavbar();
  
@@ -58,7 +56,7 @@ function handleCallClick(button) {
     addToCallHistory(service, number);
 }
 
-//Add call to history
+//Add call to history -Learnd and modified
 function addToCallHistory(serviceName, number) {
     const currentTime = new Date().toLocaleTimeString('en-US', { 
         hour: '2-digit', 
