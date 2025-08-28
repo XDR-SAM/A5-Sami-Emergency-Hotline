@@ -9,7 +9,7 @@ function updateNavbar() {
     document.getElementById('heart-count').textContent = heartCount;
     document.getElementById('coin-count').textContent = coinCount;
     document.getElementById('copy-count').textContent = copyCount;
-       // Also update mobile copy count
+       // Also mobile copy count
     const mobileCopyCount = document.getElementById('copy-count-mobile');
     if (mobileCopyCount) {
         mobileCopyCount.textContent = copyCount;
