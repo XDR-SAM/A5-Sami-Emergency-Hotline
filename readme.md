@@ -12,7 +12,7 @@
 
 Create element with `document.createElement()`, add content, then insert with `appendChild()` or `insertBefore()`.
 
-```javascript
+``` javascript
 const div = document.createElement('nav');
 div.textContent = 'Hello';
 document.body.appendChild(nav);
